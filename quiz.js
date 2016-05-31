@@ -13,7 +13,7 @@ heightBox.addEventListener("keyup", function(){
 	}
 });
 charBox.addEventListener("keyup", function(){
-	treeObject.character = charBox.value;
+	treeObject.character = charBox.value.charAt(0);
 	if(event.code==="Enter"){
 		tree(treeObject);
 	}
